@@ -8,18 +8,18 @@ Option Strict Off
 Option Explicit On
 Option Compare Text
 
-Module RolloftheDice
+Module RolloftheDice 'PascalCase - TJR
 
     Sub Main()
 
-        Randomize()
+        Randomize() ' This should go in the random number method - TJR
         Dim randomNumber As Integer
         Dim digits As String
 
         Console.BackgroundColor = ConsoleColor.DarkMagenta
         Console.ForegroundColor = ConsoleColor.White
         Console.SetWindowSize(135, 8)
-        Console.WriteLine("                                                         Roll of the Dice")
+        Console.WriteLine("                                                         Roll of the Dice") ' Use padleft or strdup - TJR
         Console.WriteLine("                                         Press enter to roll the dice. Press Q to quit.")
 
         If Console.ReadKey().Key = ConsoleKey.Q Then
